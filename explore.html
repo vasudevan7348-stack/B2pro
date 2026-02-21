@@ -81,6 +81,9 @@
             text-align: center;
             margin-bottom: 3rem;
             line-height: 1;
+            opacity: 0;
+            transform: translateY(24px);
+            animation: fade-up 0.9s ease forwards 0.2s;
         }
 
         .hero-text .sub {
@@ -111,6 +114,9 @@
             max-width: 680px;
             margin: 0 auto 3.5rem;
             text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-up 0.9s ease forwards 0.45s;
         }
 
         /* ── Section Title ── */
@@ -121,6 +127,9 @@
             color: #1A1A1A;
             text-align: center;
             margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-up 0.9s ease forwards 0.7s;
         }
 
         /* ── Nutrition Grid ── */
@@ -130,6 +139,9 @@
             gap: 1.2rem;
             max-width: 1000px;
             margin: 0 auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-up 0.9s ease forwards 0.95s;
         }
 
         .nutrition-card {
@@ -187,6 +199,14 @@
             font-size: 0.82rem;
             font-weight: 600;
             color: #1A1A1A;
+        }
+
+        /* ── Fade-up entrance animation ── */
+        @keyframes fade-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* ── Responsive ── */
