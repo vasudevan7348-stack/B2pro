@@ -111,6 +111,68 @@
             text-align: center;
         }
 
+        /* ── Founder Card ── */
+        .founder-section {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            max-width: 780px;
+            margin: 0 auto 3.5rem;
+            background: #fff;
+            border-radius: 14px;
+            padding: 2rem 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        .founder-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top;
+            flex-shrink: 0;
+            border: 3px solid #22C55E;
+        }
+
+        .founder-info .founder-name {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            letter-spacing: 0.1em;
+            color: #1A1A1A;
+            margin-bottom: 0.15rem;
+        }
+
+        .founder-info .founder-title {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.12em;
+            color: #22C55E;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+
+        .founder-info .founder-edu {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.78rem;
+            color: #999;
+            margin-bottom: 0.9rem;
+        }
+
+        .founder-info .founder-bio {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.75;
+        }
+
+        @media (max-width: 600px) {
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.6rem 1.2rem;
+            }
+        }
+
         /* ── Section Title ── */
         .section-title {
             font-family: "Bebas Neue", sans-serif;
@@ -257,8 +319,7 @@
     <!-- Fixed Left Nav -->
     <nav id="left-nav">
         <a href="explore.html" class="nav-btn" id="btn-back">Back</a>
-        <a href="https://chat.whatsapp.com/FHhZgo7crA48B7on7kzvct?mode=gi_t" target="_blank" rel="noopener noreferrer"
-            class="nav-btn" id="btn-join">Join</a>
+        <a href="join.html" class="nav-btn" id="btn-join">Join</a>
     </nav>
 
     <!-- Scrollable Main Content -->
@@ -275,6 +336,59 @@
             We are a passionate team of fitness enthusiasts and nutrition advocates on a mission to make
             high-protein, wholesome food accessible to everyone. No gimmicks — just real food, real results.
         </p>
+
+        <!-- Founder Profile -->
+        <div class="founder-section">
+            <img src="assets/nithish photo.jpeg" alt="Nithish Harihar" class="founder-photo" />
+            <div class="founder-info">
+                <div class="founder-name">Nithish Harihar</div>
+                <div class="founder-title">Founder of B²PRO</div>
+                <div class="founder-edu">Food Technology · Government College of Engineering, Karupur</div>
+                <p class="founder-bio">
+                    Nithish started B²PRO with a simple belief — that high-protein, wholesome food should be
+                    accessible to everyone, not just the elite few. With a background in Food Technology, he
+                    combines scientific rigour with a passion for fitness to craft products that truly deliver.
+                    A builder at heart, Nithish leads every decision at B²PRO with authenticity and purpose,
+                    putting community and clean nutrition above everything else.
+                </p>
+            </div>
+        </div>
+
+        <!-- Core Member Profile -->
+        <div class="founder-section">
+            <img src="assets/rhithick photo pink hoodie.jpeg" alt="Rhithick PM" class="founder-photo" />
+            <div class="founder-info">
+                <div class="founder-name">Rhithick PM</div>
+                <div class="founder-title">Core Member &amp; Growth Lead of B²PRO</div>
+                <div class="founder-edu">Metallurgical Engineering · Government College of Engineering, Karupur</div>
+                <p class="founder-bio">
+                    Rhithick is the driving force behind B²PRO's growth and outreach. With a sharp eye for
+                    opportunity and a natural ability to connect with people, he has been instrumental in
+                    building the community that makes B²PRO what it is today. His engineering mindset helps
+                    him approach every challenge with precision — whether it's scaling the brand, onboarding
+                    new members, or spreading the word about clean, high-protein living.
+                </p>
+            </div>
+        </div>
+
+        <!-- Technical Lead Profile -->
+        <div class="founder-section">
+            <img src="assets/vasu professional photo.jpeg" alt="Vasu Devan" class="founder-photo" />
+            <div class="founder-info">
+                <div class="founder-name">Vasu Devan</div>
+                <div class="founder-title">Core Member &amp; Technical Lead of B²PRO</div>
+                <div class="founder-edu">Computer Science and Engineering · Gnanamani College of Technology, Namakkal
+                </div>
+                <p class="founder-bio">
+                    Vasu Devan is the tech brain behind the entire B²PRO movement. From architecting the
+                    digital infrastructure to building this very website from the ground up, he handles every
+                    technical aspect of the brand with deep skill and dedication. His expertise in software
+                    development ensures that B²PRO's online presence is as strong as its products. Vasu
+                    believes that great technology should serve great purpose — and at B²PRO, that purpose
+                    is helping people live stronger, cleaner lives.
+                </p>
+            </div>
+        </div>
 
         <!-- Our Values -->
         <h2 class="section-title">Our Values</h2>
@@ -300,6 +414,18 @@
                 <h3>Community</h3>
                 <p>We grow together. Our community is at the heart of everything we build and share.</p>
             </div>
+            <div class="value-card">
+                <div class="value-icon">🎯</div>
+                <h3>Consistency</h3>
+                <p>Real results come from showing up every day. We build habits, not hype — because lasting change takes
+                    commitment.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">💰</div>
+                <h3>Affordability</h3>
+                <p>Performance nutrition shouldn't be a luxury. We keep our products accessible so everyone can fuel
+                    their journey — not just the few.</p>
+            </div>
         </div>
 
         <!-- Our Story -->
@@ -313,12 +439,7 @@
             </p>
         </div>
 
-        <!-- CTA -->
-        <div class="cta-section">
-            <p>Ready to join the movement?</p>
-            <a href="https://chat.whatsapp.com/FHhZgo7crA48B7on7kzvct?mode=gi_t" target="_blank"
-                rel="noopener noreferrer" class="cta-btn">Join the Community</a>
-        </div>
+
 
     </main>
 
